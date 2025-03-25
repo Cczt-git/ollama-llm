@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# OllamaHub
+# OLLAMA-LLM
 
 基于 FastAPI 的 Ollama 模型服务接口，提供 Web UI 界面和 API 调用。
 
@@ -22,5 +21,4 @@
 ### 安装依赖
 
 ```bash
-pip install fastapi uvicorn pydantic requests
-=======
+pip install -r requirements.txt
