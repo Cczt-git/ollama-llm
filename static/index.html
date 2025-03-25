@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OllamaHub API 演示</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>OllamaHub API 演示</h1>
+        
+        <div class="api-key-container">
+            <input type="text" id="apiKeyInput" placeholder="输入API Key" value="ap-czt-api">
+        </div>
+        
+        <div class="service-selector">
+            <button onclick="switchService('chat')" class="active" id="chatBtn">对话模式</button>
+            <button onclick="switchService('generate')" id="generateBtn">生成模式</button>
+        </div>
+
+        <div class="chat-container">
+            <div class="chat-messages" id="messages"></div>
+            <div class="input-container">
+                <textarea id="userInput" placeholder="输入您的问题..."></textarea>
+                <button onclick="sendMessage()">发送</button>
+            </div>
+        </div>
+
+        <div class="settings">
+            <select id="modelSelect">
+                <option value="deepseek-r1:14b">DeepSeek-14B</option>
+            </select>
+            <label>
+                <input type="checkbox" id="streamingToggle" checked>
+                流式输出
+            </label>
+            <div id="systemPrompt" style="display: none;">
+                <input type="text" id="systemInput" placeholder="输入系统提示词...">
+            </div>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>

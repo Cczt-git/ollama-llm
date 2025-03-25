@@ -1,0 +1,168 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.chat-container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.chat-messages {
+    min-height: 400px;
+    max-height: 600px;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.message {
+    white-space: pre-wrap;
+    font-family: monospace;
+    line-height: 1.5;
+    max-width: 80%;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.think-tag {
+    display: block;
+    margin: 10px 0;
+    padding: 0;
+    color: #666;
+    font-style: italic;
+}
+
+.user-message {
+    background: #e3f2fd;
+    margin-left: 20%;
+}
+
+.assistant-message {
+    background: #f5f5f5;
+    margin-right: 20%;
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+}
+
+textarea {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;
+    min-height: 60px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1565c0;
+}
+
+.settings {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.service-selector {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.service-selector button {
+    padding: 10px 20px;
+    border: 1px solid #1976d2;
+    background: white;
+    color: #1976d2;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.service-selector button.active {
+    background: #1976d2;
+    color: white;
+}
+
+#systemPrompt {
+    flex: 1;
+}
+
+#systemPrompt input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.chat-messages {
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    max-width: 80%;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.user-message {
+    align-self: flex-end;
+    background-color: #e3f2fd;
+}
+
+.assistant-message {
+    align-self: flex-start;
+    background-color: #f5f5f5;
+}
+
+.api-key-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.api-key-container input {
+    padding: 8px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
